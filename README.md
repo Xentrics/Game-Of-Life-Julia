@@ -7,4 +7,6 @@ I made some minor improvements to the code. But most importantly, I found a way 
 need of saving images. I use the matplotlib library of Python, but update the data of the plot directly.
 The syntax in julia looks a bit awkward first, but it has do to with the native Python call mechanics of Julia.
 
-I also have a 2DFT version implemented. However, there seem to be problems with Julia certain and floating points FFT. Kernels started from the Jupyter notebook through "unssafe operation" error (or similar). Within a normal Julia terminal, this doesn't happen.
+## Note
+There are two version. The **core** version simply updates the code by byrddev.
+The others use 2D discrete fourier transformation (with circular convolution). This is not just faster, is also make the evolution of the grid more interesting (edges are not truncated). However, there seem to be problems with Julia certain and floating points FFT. Kernels started from the Jupyter notebook through "unssafe operation" error (or similar). Within a normal Julia terminal, this doesn't happen.
